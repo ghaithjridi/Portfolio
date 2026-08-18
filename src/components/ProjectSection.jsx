@@ -1,25 +1,26 @@
-import { ArrowRight, Github, Receipt, Trophy } from "lucide-react";
+import { ArrowRight, Github, LayoutTemplate, Trophy } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: "EasyBill",
-    description:
-      "A full-stack web app that lets businesses manage professional invoices and track expenses. Built with React on the frontend and Node.js/Express CRUD operations connected to a MySQL database.",
-    Icon: Receipt,
-    gradient: "from-primary to-purple-600",
-    tags: ["React", "Node.js", "Express", "MySQL", "Tailwind"],
-    githubUrl: "https://github.com/ghaithjridi",
-  },
-  {
-    id: 2,
     title: "Football Academy Platform",
     description:
-      "A platform that helps football players evaluate their selection potential through online tests. Frontend built with HTML, CSS, JavaScript, and Bootstrap; backend logic implemented with Python and Flask.",
+      "A team-built platform that helps football players evaluate their selection potential through online tests. Frontend built with HTML, CSS, JavaScript, and Bootstrap; backend logic implemented with Python and Flask.",
     Icon: Trophy,
     gradient: "from-emerald-500 to-teal-600",
     tags: ["Python", "Flask", "Bootstrap", "JavaScript", "CSS"],
-    githubUrl: "https://github.com/ghaithjridi",
+    githubUrl:
+      "https://github.com/SABRIwalid92/Python_Project_Football_Academy",
+  },
+  {
+    id: 2,
+    title: "Developer Portfolio",
+    description:
+      "This site. A responsive single-page portfolio with light and dark themes, built on React 18 and Vite, styled with Tailwind CSS v4, using Radix UI primitives and covered by a Vitest test setup.",
+    Icon: LayoutTemplate,
+    gradient: "from-primary to-purple-600",
+    tags: ["React", "Vite", "Tailwind", "Radix UI", "Vitest"],
+    githubUrl: "https://github.com/ghaithjridi/Portfolio",
   },
 ];
 
@@ -52,7 +53,10 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
