@@ -9,8 +9,7 @@ const projects = [
     Icon: Trophy,
     gradient: "from-emerald-500 to-teal-600",
     tags: ["Python", "Flask", "Bootstrap", "JavaScript", "CSS"],
-    githubUrl:
-      "https://github.com/SABRIwalid92/Python_Project_Football_Academy",
+    githubUrl: "https://github.com/ghaithjridi/football-academy-platform",
   },
   {
     id: 2,
